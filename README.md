@@ -4,8 +4,8 @@ my personal fork of tdesktop. based on the latest `master` branch. (maybe)
 
 # Features
 
-1. a ui improvement
-2. some default encryption for your tdata (useful until it becomes popular).
+1. some ui improvement
+2. local passcode with u2f devices
 3. probably some bugs as I'm not familiar with C++/Qt
 
 # Disclaimer
@@ -27,8 +27,13 @@ if you're using arch, make sure you have docker-buildx installed or you'll get a
 
 or you can: use `./icyt p && cd icytea ` then follow the [official guide](https://github.com/telegramdesktop/tdesktop/blob/master/docs/)
 
-> **note**
+> [!TIP]
 >
+> It's recommended to use [official prebuilt environment](https://github.com/telegramdesktop/tdesktop/pkgs/container/tdesktop%2Fcentos_env) for compilation as `prepare.sh` compiles EVERYTHING
+
+> [!NOTE]
+>
+> Please preserve enough disk space (30GB at least) to build telegram.
 > It would be better if you build with a CI since building telegram requires many resources.
 
 # Why do you use patches?
