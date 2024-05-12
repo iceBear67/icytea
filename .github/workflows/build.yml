@@ -44,4 +44,4 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.3
         with:
-          path: icyt/out/
+          path: icyt/out/RelWithDebInfo
