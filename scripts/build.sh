@@ -12,7 +12,7 @@ if [ "$1" == "--linux" ]; then
     tdesktop:centos_env \
     /usr/src/tdesktop/Telegram/build/docker/centos_env/build.sh \
     -D TDESKTOP_API_ID="$TELEGRAM_API_ID" \
-    -D TDESKTOP_API_HASH="$TELEGRAM_API_HASH"
-    -D DESKTOP_APP_DISABLE_CRASH_REPORTS=OFF
+    -D TDESKTOP_API_HASH="$TELEGRAM_API_HASH" \
+    -D DESKTOP_APP_DISABLE_CRASH_REPORTS=OFF \
     -D CMAKE_EXE_LINKER_FLAGS="-s"
 fi
