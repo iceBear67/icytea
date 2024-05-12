@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
+export TDESKTOP_VERSION=$(cat .base_version)
 case "$1" in
     "rb" | "rbp" | "rebuild")
         scripts/rebuildPatches.sh
     ;;
     "p" | "patch")
-        scripts/build.sh
+        scripts/build.sh 
     ;;
     "m" | "up" | "merge")
         scripts/mergeUpstream.sh

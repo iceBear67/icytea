@@ -60,8 +60,17 @@ if [[ "$gpgsign" == "true" ]]; then
     git config --global commit.gpgsign false
 fi
 
+if [[ "$CI" == "true" ]]; then
+  git config --global user.name github-actions
+  git config --global user.email "ci+noreply@github.com"
+fi
+
+if [ -z ${TDESKTOP_VERSION+x} ]; then
+  echo "[!!] TDESKTOP_VERSION is unset"
+  exit
+fi
 
 # Apply patches
-applyPatch tdesktop icyt HEAD
+applyPatch tdesktop icyt "$TDESKTOP_VERSION"
 
 enableCommitSigningIfNeeded

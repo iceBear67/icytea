@@ -1,4 +1,4 @@
 [submodule "tdesktop"]
 	path = tdesktop
 	url = https://github.com/telegramdesktop/tdesktop
-	branch = master
+	branch = dev

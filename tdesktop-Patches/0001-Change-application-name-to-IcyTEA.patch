@@ -1,11 +1,8 @@
-From e23d82d5b75e1b83bc7919756e6058ca7e1bd59f Mon Sep 17 00:00:00 2001
+From e9e26c5a776da633a6fb0723af0f92777c4636e6 Mon Sep 17 00:00:00 2001
 From: iceBear67 <icebear67@sfclub.cc>
 Date: Wed, 8 May 2024 17:14:33 +0800
 Subject: [PATCH] Change application name to IcyTEA
 
----
- Telegram/SourceFiles/core/launcher.cpp | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/Telegram/SourceFiles/core/launcher.cpp b/Telegram/SourceFiles/core/launcher.cpp
 index 2765fe3ed..14390ed27 100644
