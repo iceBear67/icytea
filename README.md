@@ -1,6 +1,6 @@
 # icytea
 
-my personal fork of tdesktop. based on the latest `master` branch. (maybe)
+my personal fork of tdesktop. based on the latest released tag (maybe)
 
 # Features
 
